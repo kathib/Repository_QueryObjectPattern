@@ -14,7 +14,7 @@ namespace ASPPatterns.Chap7.QueryObject.UI.Web
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            // 1. Csinál egy orderRepository-t (A Web.config-ban lévő ShopConnectionString- segítségével.)
+            // 1.  Csinál egy orderRepository-t (A Web.config-ban lévő ShopConnectionString- segítségével.)
             IOrderRepository orderRepository = new OrderRepository(ConfigurationManager.ConnectionStrings["ShopConnectionString"].ConnectionString);
 
             // 2. Amit az OrderService -osztály használ majd az adatbázissal való közvetlen kommunikációra.
